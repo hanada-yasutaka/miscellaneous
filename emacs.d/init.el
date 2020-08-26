@@ -73,3 +73,6 @@
 
 ;; フォントの横幅を調整
 (add-to-list 'face-font-rescale-alist '(".*Noto.*" . 1.2))
+
+;; 日本語ディレクトリの設定
+(set-default-coding-systems 'utf-8)
