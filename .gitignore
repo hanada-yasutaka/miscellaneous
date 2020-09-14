@@ -3,3 +3,5 @@
 emacs.d/auto-save-liste
 emacs.d/network-security.data
 emacs.d/session.*
+emacs.d/elpa
+emacs.d/kkcrc
