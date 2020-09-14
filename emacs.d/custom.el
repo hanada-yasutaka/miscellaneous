@@ -5,7 +5,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (mozc yatex yafolding volatile-highlights undo-tree rainbow-delimiters python-mode init-loader atom-dark-theme)))
+    (yatex yafolding volatile-highlights undo-tree rainbow-delimiters python-mode package-utils mozc init-loader atom-dark-theme)))
  '(py-indent-offset 4))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

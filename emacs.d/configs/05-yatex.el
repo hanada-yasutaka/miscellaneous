@@ -92,3 +92,6 @@
              (reftex-mode 1)
              (define-key reftex-mode-map (concat YaTeX-prefix ">") 'YaTeX-comment-region)
              (define-key reftex-mode-map (concat YaTeX-prefix "<") 'YaTeX-uncomment-region)))
+
+;; bibファイルの(相対・絶対)パスを指定しないとファイル分割した際にreftexがbibファイルを見つけてくれない
+(setq reftex-default-bibliography '("ref.bib" "references.bib" "bib.bib"))

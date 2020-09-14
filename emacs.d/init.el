@@ -2,10 +2,11 @@
 ;;
 
 
-;(let ((default-directory (expand-file-name "~/.emacs.d/site-lisp")))
-;  (add-to-list 'load-path default-directory)
-;  (if (fboundp 'normal-top-level-add-subdirs-to-load-path)
-;      (normal-top-level-add-subdirs-to-load-path)))
+
+;;(let ((default-directory (expand-file-name "~/.emacs.d/site-lisp")))
+;;  (add-to-list 'load-path default-directory)
+;;  (if (fboundp 'normal-top-level-add-subdirs-to-load-path)
+;;      (normal-top-level-add-subdirs-to-load-path)))
 
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
@@ -25,6 +26,8 @@
     python-mode
     atom-dark-theme
     mozc
+    package-utils
+;;    auctex
 ;;    blank-mode
 ;;    hlinum
 ;;    popup
@@ -63,6 +66,8 @@
                       64 68 72 76 80 84 88 92 96 100 104 108 112 116 120))
 
 
+
+
 ;; 日本語フォントを設定
 (set-fontset-font
  nil 'japanese-jisx0208
@@ -71,8 +76,5 @@
 ;; フォントの横幅を調整
 (add-to-list 'face-font-rescale-alist '(".*Noto.*" . 1.2))
 
-;; 日本語ディレクトリを扱う設定
+;; 日本語ディレクトリの設定
 (set-default-coding-systems 'utf-8)
-
-;; 括弧の自動補完 off
-(electric-pair-mode nil)
